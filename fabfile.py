@@ -49,8 +49,8 @@ def checkos():
 	sudo("cat /etc/*-release ")
 	
 def chefclient():
-	sudo("chef-client -o neustar-yum::yum_cleanup")
-	sudo("chef-client -o neustar-yum::latest")
+	sudo("chef-client -o yum::yum_cleanup")
+	sudo("chef-client -o yum::latest")
 
 def chekchef():
 	sudo("cat /etc/chef/client.rb")
