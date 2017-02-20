@@ -50,7 +50,11 @@ def checkos():
 	
 def chefclient():
 	sudo("chef-client -o yum::yum_cleanup")
+<<<<<<< HEAD
 	sudo("chef-client -o -yum::latest")
+=======
+	sudo("chef-client -o yum::latest")
+>>>>>>> a9be4e67a911e78f825e3a6e7090f225a35eca92
 
 def chekchef():
 	sudo("cat /etc/chef/client.rb")
